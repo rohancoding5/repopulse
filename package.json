@@ -1,0 +1,35 @@
+{
+  "name": "repopulse",
+  "version": "0.1.0",
+  "description": "Grades a GitHub repo's health across docs, tests, CI, issues, releases, dependencies, accessibility, and upkeep, with a letter grade.",
+  "type": "module",
+  "bin": {
+    "repo-health": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test dist/__tests__/*.test.js"
+  },
+  "keywords": [
+    "github",
+    "repo",
+    "health",
+    "score",
+    "cli",
+    "ci",
+    "accessibility"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "typescript": "^5.9.3"
+  }
+}
